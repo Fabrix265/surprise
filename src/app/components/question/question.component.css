@@ -1,0 +1,147 @@
+/* Fondo principal: degradado romántico */
+body {
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(135deg, #ff9a9e 30%, #fad0c4 70%);
+    color: #4a4a4a;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Contenedor principal */
+  div {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.85); /* Fondo claro translúcido */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s;
+  }
+  
+  div:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Títulos elegantes */
+  h1, h2 {
+    color: #ff6f91;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Texto */
+  p {
+    color: #4a4a4a;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 15px 0;
+    line-height: 1.6;
+  }
+  
+  /* Inputs */
+  input[type="text"] {
+    padding: 15px;
+    width: 300px;
+    font-size: 18px;
+    border: 2px solid #ff6f91;
+    border-radius: 20px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    color: #4a4a4a; /* Texto oscuro para buena visibilidad */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #ff3b6f;
+    box-shadow: 0 0 15px #ff3b6f;
+  }
+  
+  /* Botones */
+  button {
+    background: linear-gradient(135deg, #ff6f91, #ff9a9e);
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff3b6f, #ff6f91);
+  }
+  
+  /* Mensajes de error */
+  .error-message {
+    color: #ff4d4d;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Mensajes de éxito */
+  .success-section {
+    color: #ff9a9e;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Animación de mensajes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Imagen decorativa */
+  img {
+    border: 8px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Enlaces decorativos */
+  a {
+    color: #ff6f91;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #ff3b6f;
+  }
+  

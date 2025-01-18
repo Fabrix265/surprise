@@ -1,0 +1,10 @@
+/* Fondo con imagen */
+body {
+    background-image: url('https://images.pexels.com/photos/159038/heart-wooden-heart-symbol-love-159038.jpeg?cs=srgb&dl=pexels-pixabay-159038.jpg&fm=jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    margin: 0;
+    padding: 0;
+  }
+  

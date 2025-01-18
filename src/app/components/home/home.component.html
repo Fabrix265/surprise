@@ -1,0 +1,28 @@
+<div style="text-align: center; margin-top: 50px;">
+    <!-- Texto inicial -->
+    <h1>Bienvenida, tendras que ver la imagen mandada a tu correo para poder decifrar el codigo, prueba a buscar "Je t'aime"</h1>
+    <h1>Recuerda poner todo en minusculas</h1>
+    <!-- Imagen -->
+    <img src="/code.png" alt="Code" height="300" width="1500" style="margin: 20px 0;" />
+  
+    <!-- Input para texto -->
+    <input
+      type="text"
+      placeholder="Ingresa un texto"
+      [(ngModel)]="userInput"
+      style="padding: 10px; width: 200px;"
+    />
+    <button (click)="validateInput()" style="padding: 10px; margin-left: 10px;">Enviar</button>
+  
+    <!-- Mostrar mensaje de error o sección adicional -->
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+  
+    <div *ngIf="showSection" class="success-section">
+      <p>¡Ingresaste el codigo correcto!</p>
+    </div>
+    <h1>Posdata: Ich liebe dich, Eu te amo, Я тебя люблю, 愛してる, 我爱你, 사랑해, أحبك, मैं तुमसे प्यार करता हूँ, Σ'αγαπώ, Ik hou van jou, Seni seviyorum, Jag älskar dig, Jeg elsker deg, Jeg elsker dig, Rakastan sinua, Szeretlek, Kocham cię, Miluji tě, Ľúbim ťa, Te iubesc, אני אוהב אותך, ฉันรักคุณ, Anh yêu em, Mahal kita, Nakupenda, Ngiyakuthanda, A hụrụ m gị n'anya, Mo nifẹ rẹ, Mi amas vin, Tha gaol agam ort, Taim i' ngrá leat, Aku cinta kamu, Saya cinta awak.</h1>
+
+  </div>
+  
