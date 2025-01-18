@@ -1,0 +1,22 @@
+<div style="text-align: center; margin-top: 50px;">
+    <h2>Algunas preguntas para que recuerdes cositas que pasamos</h2>
+
+    <h2>{{ questions[currentQuestionIndex].question }}</h2>
+  
+    <input
+      type="text"
+      [(ngModel)]="userAnswer"
+      placeholder="Escribe tu respuesta"
+      style="padding: 10px; width: 200px;"
+    />
+    <button (click)="checkAnswer()" style="padding: 10px; margin-left: 10px;">Enviar</button>
+  
+    <div *ngIf="message" style="margin-top: 20px;">
+      <p>{{ message }}</p>
+    </div>
+  
+    <button *ngIf="showNextButton" (click)="nextQuestion()" style="padding: 10px; margin-top: 10px;">
+      Siguiente pregunta
+    </button>
+  </div>
+  
